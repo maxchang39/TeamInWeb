@@ -1,0 +1,172 @@
+ul li {
+	list-style-type: none;
+}
+
+[v-cloak] {
+	display: none
+}
+
+#main {
+	font: 14px arial, sans-serif;
+}
+
+.navbar {
+	height: 40px;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#top p {
+	font-size: 16px;
+	line-height: 40px;
+	padding-left: 10px;
+	margin: 0;
+}
+
+#content-container {
+	overflow: hidden;
+	height: 600px;
+	border: 1px solid #e1e2e5;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .14);
+	background: white;
+	border-radius: 4px;
+	display: flex;
+}
+
+.main-tab-button {
+	color: black;
+	padding: 3px 5px 3px 5px;
+	user-select: none;
+}
+
+.main-tab-button.selected {
+	background-color: #00a1d7;
+}
+
+.main-tab-button:hover {
+	background-color: #e1e4ea;
+	color: black;
+	cursor: pointer;
+}
+
+#left {
+	width: 200px;
+	border: 1px solid #e1e2e5;
+	background: #fafafa;
+}
+
+#left .main-tab-button {
+	font-size: 16px;
+	height: 40px;
+	vertical-align: middle;
+	margin: 0;
+	line-height: 40px;
+}
+
+.main-dialog {
+	background-color: #f6f6f6;
+	min-width: 400px;
+	padding: 0px 20px 10px 20px;
+	border: 1px solid #e1e2e5;
+	margin: 0 auto;
+}
+
+.main-dialog .dialog-title {
+	width: 400px;
+	height: 20px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.main-dialog .dialog-title span {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	font-size: 20px;
+	background: #f6f6f6;
+	text-align: center;
+}
+
+.main-dialog .dialog-line>* {
+	display: inline-block;
+}
+
+.main-dialog .dialog-line>*:first-child {
+	height: 30px;
+	width: 110px;
+	text-align: left;
+}
+
+.main-dialog .dialog-line>*:nth-child(2) {
+	width: 220px;
+}
+
+.main-dialog .dialog-button-line {
+	width: 100%;
+}
+
+.main-dialog .dialog-button-line .button {
+	width: 80px;
+	font-size: 16px;
+	vertical-align: middle;
+	text-align: center;
+	padding: 3px 5px 3px 5px;
+	user-select: none;
+	background-color: #00a1d7;
+	border-radius: 4px;
+	margin: 0 auto;
+}
+
+.main-dialog .dialog-button-line .button:hover {
+	background-color: #5BC0DE;
+	cursor: pointer;
+}
+
+.main-dialog .dialog-checkbox {
+	vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+
+#item-list-dialog {
+	background-color: #f6f6f6;
+	width: 400px;
+	text-align: center;
+	border: 2px solid #aaa;
+	margin: 0 auto;
+}
+
+#item-list-dialog div {
+	padding-top: 12px;
+	padding-left: 5px;
+	text-align: left;
+}
+
+#item-list-dialog .stored-items {
+	width: 100%;
+	display: inline-table;
+}
+
+#item-list-dialog .stored-items .product-name {
+	min-width: 80px;
+	display: inline-block;
+}
+
+#item-list-dialog .stored-items .product-description {
+	min-width: 200px;
+	display: inline-block;
+}
+
+#item-list-dialog .stored-items .product-images {
+	min-width: 200px;
+	display: inline-block;
+}
+
+#item-list-dialog .uploadedImage {
+	max-height: 80px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}

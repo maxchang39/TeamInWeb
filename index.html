@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" style="text/css" />
+		<link href="css/main.css" rel="stylesheet" style="text/css" />
+		<script src="js/lib/require.js" data-main="js/main"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<div id="main">
+			<div id="top" class="navbar">
+				<p>Project TeamIn</p>
+			</div>
+			<div id="content-container">
+				<div id="left">
+					<p @click="openMenu(1)" v-bind:class="{ selected: menu==1 }" class="main-tab-button">Create User</p>
+					<p @click="openMenu(2)" v-bind:class="{ selected: menu==2 }" class="main-tab-button">Sign in</p>
+				</div>
+				<div class="container-fluid">
+					<div class="main-dialog" v-show="menu==1">
+						<div class="dialog-title">
+							<span>Register</span>
+						</div>
+						<div class="dialog-line">
+							<span>User Name: </span>
+							<input type="text" v-model="user_name" />
+						</div>
+						<div class="dialog-line">
+							<span>Password: </span>
+							<input v-bind:type="showPassword ? 'text': 'password'" v-model="user_passward" />
+						</div>
+						<div>
+							<input v-model="showPassword" class="dialog-checkbox" type="checkbox">
+							<span> show password</span>
+						</div>
+						<div class="dialog-button-line">
+							<p @click="submit" class="button">Submit</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
